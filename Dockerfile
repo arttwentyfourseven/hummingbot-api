@@ -11,6 +11,7 @@ WORKDIR /build
 
 # Copy only the environment file first (for better layer caching)
 COPY environment.yml .
+COPY wheels/hummingbot-*.whl /tmp/
 
 # Create the conda environment
 RUN conda env create -f environment.yml && \
