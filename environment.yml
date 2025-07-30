@@ -12,7 +12,7 @@ dependencies:
   - docker-py
   - pip
   - pip:
-      - hummingbot
+      - git+https://github.com/arttwentyfourseven/hummingbot.git
       - flake8
       - isort
       - pre-commit
